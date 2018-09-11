@@ -14,16 +14,16 @@ public class CalculatorGUI extends JFrame {
 	
 	private JButton[] buttons;
 	
-	private static final String[] names = {"7", "8", "9", "/", "4", "5", "6", "*", "1", "2", "3", "-", "0", ".", "=", "+"};
+	private static final String[] names = {"7", "8", "9", "/", "4", "5", "6", "*", "1", "2", "3", "-", "0", ".", "=", "+","fat","exp","sqrt","raizcub","%","x²","x³","x^y","clear"};
 	
 	public CalculatorGUI() {
 		super("Calculator");
 		setLayout(new BorderLayout());
 		
 		panel = new JPanel();
-		panel.setLayout(new GridLayout(4, 4));
+		panel.setLayout(new GridLayout(5, 5));
 		
-		buttons = new JButton[16];
+		buttons = new JButton[25];
 		for (int i = 0; i < buttons.length; i++) {
 			buttons[i] = new JButton(names[i]);
 			panel.add(buttons[i]);
